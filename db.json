@@ -41,6 +41,18 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Lemongrass",
+      "price": 300,
+      "image": "http://localhost:3000/images/aloe.jpg",
+      "id": 8
+    },
+    {
+      "name": "New Aloe Plant",
+      "price": 10000,
+      "image": "http://localhost:3000/images/aloe.jpg",
+      "id": 9
     }
   ]
 }
