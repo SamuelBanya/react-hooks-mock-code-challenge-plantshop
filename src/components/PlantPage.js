@@ -8,7 +8,7 @@ function PlantPage() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:6001/plants")
+    fetch("https://plantshop-jsonserver.herokuapp.com/plants")
       .then((response) => response.json())
       .then((plantsArray) => setPlants(plantsArray));
   }, []);
