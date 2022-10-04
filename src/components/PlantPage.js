@@ -8,7 +8,7 @@ function PlantPage() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("https://plantshop-jsonserver.herokuapp.com/plants")
+    fetch("https://react-hooks-mock-code-challenge-308h.onrender.com/plants")
       .then((response) => response.json())
       .then((plantsArray) => setPlants(plantsArray));
   }, []);

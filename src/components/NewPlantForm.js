@@ -10,17 +10,17 @@ function NewPlantForm({ onAddPlant }) {
   function handleSubmit(e) {
     e.preventDefault();
     // Make the POST request:
-    fetch("https://plantshop-jsonserver.herokuapp.com/plants", {
+    fetch("https://react-hooks-mock-code-challenge-308h.onrender.com/plants", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: name,
-        price: price,
-        image: image,
-      }),
-    })
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: name,
+          price: price,
+          image: image,
+        }),
+      })
       .then((response) => response.json())
       .then((newPlant) => {
         onAddPlant(newPlant);
